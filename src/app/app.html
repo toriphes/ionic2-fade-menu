@@ -1,0 +1,30 @@
+<ion-menu [content]="content" type="fade" class="side-menu">
+    <ion-header>
+        <ion-navbar>
+            <button ion-button menuToggle>
+                <ion-icon name="md-close"></ion-icon>
+            </button>
+            <ion-title>
+                Menu
+            </ion-title>
+        </ion-navbar>
+    </ion-header>
+    <ion-content padding>
+        <ion-grid>
+            <ion-row>
+                <ion-col text-center>
+                    <ion-icon name="ios-alarm"></ion-icon>
+                </ion-col>
+                <ion-col text-center>
+                    <ion-icon name="logo-android"></ion-icon>
+                </ion-col>
+                <ion-col text-center>
+                    <ion-icon name="logo-apple"></ion-icon>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+        <p text-center>This is the fade menu</p>
+    </ion-content>
+</ion-menu>
+
+<ion-nav #content [root]="rootPage"></ion-nav>
